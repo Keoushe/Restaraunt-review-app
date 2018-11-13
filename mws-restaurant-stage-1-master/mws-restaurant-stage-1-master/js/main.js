@@ -6,7 +6,7 @@ var markers = []
 
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('js/sw/sw.js')
+  navigator.serviceWorker.register('sw.js')
   .then((reg) => {
     //Registration success
     if(reg.installing) {
