@@ -1,6 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -302,6 +310,8 @@ nav h1 a {
 }
 
 @media only screen and (min-width: 1000px) {
+
+
 	body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -348,6 +358,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+	width: 100%;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -506,7 +517,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 100%;
+  /*width: 50%;*/
 }
 #restaurant-name {
   color: #f18200;
@@ -517,6 +528,7 @@ nav h1 a {
   margin: 15px 0 30px;
   text-transform: uppercase;
   line-height: 1.1;
+	width: 100%;
 }
 #restaurant-img {
 	width: 90%;

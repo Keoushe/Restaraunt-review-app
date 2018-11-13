@@ -3,7 +3,7 @@ let staticCache = 'restaurant-cache-1';
 
 const cacheFiles = [
   '/',
-  '/index.html'
+  '/index.html',
   '/restaurant.html',
   '/css/styles.css',
   '/data/restaurants.json',
@@ -28,7 +28,7 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(staticCache).then(function (cache) {
       console.log(cache);
-      return cache.addAll(urlToCache);
+      return cache.addAll(cacheFiles);
 
     }).catch(error => {
       console.log(error);
